@@ -21,8 +21,8 @@ function getFormJson($form) {
     var dataArray,
         jsonData;
 
-        dataArray = $form.serializeArray();
-        jsonData = {};
+    dataArray = $form.serializeArray();
+    jsonData = {};
 
     $.map(dataArray, function (n) {
         jsonData[n['name']] = n['value'];
